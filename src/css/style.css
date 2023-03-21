@@ -1,0 +1,135 @@
+html{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #686565;
+}
+
+.secao-ajuda{
+    background-image: url(../img/bg-repeat.jpg);
+    background-repeat: repeat;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    width: 800px;
+    height: 400px;
+    gap: 75px;
+}
+
+.secao-ajuda .secao-aviso{
+    margin-left: 45px;
+    width: 290px;
+    height: 120px;
+}
+
+.secao-ajuda .secao-aviso .titulo-ajuda{
+    color: #fff;
+    font-size: 25px;
+    line-height: 25px;
+    font-weight: 300;
+}
+.secao-ajuda .secao-aviso .texto{
+    font-size: 15px;
+    font-weight: 300;
+    color: #fff;
+    line-height: 15px;
+    margin-top: 10px;
+
+}
+
+.container{
+    display: flex;
+    background-color: #fff;
+    width: 333px;
+    height: 370px;
+}
+
+.formulario-cadastro{
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+}
+.formulario-cadastro input{
+    width: 280px;
+    height: 30px;
+    border-radius: 5px;
+    padding: 10px;
+    border: 1px solid #000000;
+    font-size: 12px;
+    font-weight: 350;
+    outline: none;
+
+
+}
+
+.formulario-cadastro .campo-obrigatorio{
+    width: 70px;
+    height: 8px;
+    font-family: 'Kanit';
+    font-size: 8.5px;
+    font-style: normal;
+    font-weight: 380;
+    color: rgb(255, 0, 0);
+    background-color: #fff;
+    line-height: 9px;
+    display: none;
+}
+.campo-obrigatorio.mostra-msg{
+    display: block;
+}
+.formulario-cadastro textarea{
+    height: 100px;
+    width: 280px;
+    border-radius: 5px;
+    padding: 10px;
+    border: 1px solid #000000;
+    outline: none;
+    font: "Kanit";
+    font-size: 12px;
+    font-weight: 370;
+}
+
+.formulario-cadastro .informacoes-usuario{
+    margin: 9px 18px 1px;
+}
+
+.formulario-cadastro .fixo{
+    margin-left: 15px;
+}
+
+.formulario-cadastro p{
+    font-size: 13px;
+    font-weight: 380;
+    line-height: 18px;
+}
+.btn{
+    margin: auto;
+}
+
+.btn input{
+    display: flex;
+    justify-content: center;
+    margin: 10px 19px;
+
+    background-color: #3CCC87;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    height: 45px;
+    width: 280px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.btn input:hover{
+    background-color: #0ad171;
+}
+
+.textos.invalido{
+    border-color: #F52E2E;
+}
+
+.textos.valido{
+    border-color: #00C22B;
+}

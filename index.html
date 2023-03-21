@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+    
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <!-- <link rel="stylesheet" href="./src/css/responsive.css"> -->
+    <title>Formulario de Cadastro</title>
+</head>
+<body>
+    <main>
+        <section class="secao-ajuda">
+            <div class="secao-aviso">
+                <h2 class="titulo-ajuda">FICOU COM DÚVIDA? <br> NOS MANDE UMA MENSAGEM!</h2>
+                <p class="texto">caso tenha ficado com qualquer dúvida basta nos mandar uma mensagem e entraremos em contato em menos de 24h.</p>
+            </div>
+            <div class="container">
+                <form class="formulario-cadastro" id="form" action="#" method="post">
+                    <div class="informacoes-usuario">
+                        <input class="textos" placeholder="Nome Obrigatorio" type="text" name="nome" id="nome" required>
+                        <p class="campo-obrigatorio">campo obrigatório</p>
+                    </div>
+                    <div class="informacoes-usuario">
+                        <input class="textos" placeholder="Email"  type="text" name="nome" id="email" required>
+                        <p class="campo-obrigatorio">campo obrigatório</p>
+                    </div>
+                    <div class="informacoes-usuario">
+                        <input class="textos" placeholder="Telefone"  type="text" name="nome" id="telefone" required>
+                        <p class="campo-obrigatorio">campo obrigatório</p>
+                    </div>
+                    <div class="informacoes-usuario">
+                        <textarea class="textos" placeholder="Mensagem"  type="text" name="nome" id="mensagem" required></textarea>
+                        <p class="campo-obrigatorio">campo obrigatório</p>
+                    </div>
+                    <p class="fixo"> *campos obrigatorios</p>
+                    <div class="btn">
+                        <input class="submit" type="submit" value="Enviar">
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <script src="./src/js/cadastro.js"></script>
+</body>
+</html>
