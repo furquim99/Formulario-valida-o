@@ -2,29 +2,32 @@
     body{
         font-size: 15px;
     }
-    .secao-ajuda{
+    .secao-aviso{
         width: 300px;
         height: 110px;
     }
-    .secao-ajuda h2{
+    .secao-aviso h2{
         font-size: 20px;
     }
-    .container{
-        padding: 20px;
+    .secao-aviso{
+        padding: 10px;
         width: 320px;
         max-width: 400px;
     }
-    .container input{
+    .secao-ajuda input{
         padding: 9px;
         width: 280px;
         height: 35px;
     }
-    .container textarea{
+    .secao-ajuda textarea{
         padding: 9px;
         width: 280px;
         height: 100px;
     }
-    .container .submit{
+    .secao-ajuda .submit{
+        font-size: 15px;
+    }
+    .error{
         font-size: 15px;
     }
     .fixo{
@@ -32,15 +35,15 @@
     }
 }
 
-@media(max-width:768px){
-    main{
+@media(max-width:740px){
+    .container{
         flex-direction: column;
         text-align: center;
         padding: 20px;
     }
-    .secao-ajuda{
+    .secao-aviso{
         margin: 0 auto;
-        margin-bottom: 40px;
+        margin-bottom: 80px;
         margin-right: auto;
     }
 }

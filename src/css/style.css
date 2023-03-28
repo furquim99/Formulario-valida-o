@@ -1,48 +1,54 @@
 html{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
     background-color: #686565;
-}
-
-.secao-ajuda{
     background-image: url(../img/bg-repeat.jpg);
-    background-repeat: repeat;
-    display: flex;
-    /* justify-content: center; */
-    align-items: center;
-    width: 800px;
-    height: 400px;
-    gap: 75px;
+    background-size: contain;
+    
 }
-
-.secao-ajuda .secao-aviso{
-    margin-left: 45px;
-    width: 290px;
-    height: 120px;
-}
-
-.secao-ajuda .secao-aviso .titulo-ajuda{
-    color: #fff;
-    font-size: 25px;
-    line-height: 25px;
-    font-weight: 300;
-}
-.secao-ajuda .secao-aviso .texto{
-    font-size: 15px;
-    font-weight: 300;
-    color: #fff;
-    line-height: 15px;
-    margin-top: 10px;
-
-}
-
 .container{
     display: flex;
-    background-color: #fff;
-    width: 333px;
-    height: 370px;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.secao-aviso{
+    color: white;
+    width: 450px;
+    height: 165px;
+    margin-right: 70px;
+}
+.secao-aviso h2{
+    font-weight: 900;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+.secao-ajuda{
+    background-color:  white;
+    padding: 10px;
+    /* width: 510px; */
+    max-height: 500px;
+}
+.secao-ajuda div{
+    margin-bottom: 22px;
+}
+
+.secao-ajuda input{
+    padding: 13px;
+    width: 450px;
+    height: 150px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.secao-ajuda textarea{
+    padding: 13px;
+    width: 450px;
+    height: 150px;
+    border: 1px solid black;
+    border-radius: 5px;
 }
 
 .formulario-cadastro{
@@ -66,7 +72,7 @@ html{
 .formulario-cadastro .campo-obrigatorio{
     width: 70px;
     height: 8px;
-    font-family: 'Kanit';
+    font-family: 'Roboto';
     font-size: 8.5px;
     font-style: normal;
     font-weight: 380;
@@ -85,7 +91,7 @@ html{
     padding: 10px;
     border: 1px solid #000000;
     outline: none;
-    font: "Kanit";
+    font: "Roboto";
     font-size: 12px;
     font-weight: 370;
 }
@@ -103,11 +109,22 @@ html{
     font-weight: 380;
     line-height: 18px;
 }
-.btn{
-    margin: auto;
+.secao-ajuda .submit{
+    background-color: #3CCC87;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease-in;
+    color: white;
+    font-weight: 700;
+    font-size: 12px;
+    margin-top: 15px;
+    margin-left: 19px;
+}
+.secao-ajuda .submit:hover{
+    background-color: #5aeea6;
 }
 
-.btn input{
+/* .secao-ajuda input{
     display: flex;
     justify-content: center;
     margin: 10px 19px;
@@ -121,15 +138,27 @@ html{
     font-size: 15px;
     font-weight: 600;
     cursor: pointer;
-}
-.btn input:hover{
+} */
+/* .submit input:hover{
     background-color: #0ad171;
+} */
+
+.secao-ajuda input.valido, .secao-ajuda textarea.valido{
+    border: 2px solid #3CCC87;
+    border-radius: 5px;
 }
 
-.textos.invalido{
-    border-color: #F52E2E;
+.secao-ajuda input.error, .secao-ajuda textarea.error{
+    border: 2px solid #F52E2E;
+    border-radius: 5px;
 }
 
-.textos.valido{
-    border-color: #00C22B;
+
+
+.error{
+    font-size: 12px;
+    color: #F52E2E;
+}
+.none{
+    display: none;
 }
