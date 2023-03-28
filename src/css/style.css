@@ -124,24 +124,7 @@ html{
     background-color: #5aeea6;
 }
 
-/* .secao-ajuda input{
-    display: flex;
-    justify-content: center;
-    margin: 10px 19px;
 
-    background-color: #3CCC87;
-    border: none;
-    color: #fff;
-    border-radius: 5px;
-    height: 45px;
-    width: 280px;
-    font-size: 15px;
-    font-weight: 600;
-    cursor: pointer;
-} */
-/* .submit input:hover{
-    background-color: #0ad171;
-} */
 
 .secao-ajuda input.valido, .secao-ajuda textarea.valido{
     border: 2px solid #3CCC87;
